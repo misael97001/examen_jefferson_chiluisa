@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "6462687e-9e70-4b3d-9922-adbdd15a9c5d",
+    "name": "Vendedores",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52046897",
+    "_collection_link": "https://go.postman.co/collection/52046897-6462687e-9e70-4b3d-9922-adbdd15a9c5d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Agregar vendedor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cedula\": \"3711111111\",\n    \"numeroVentas\": 0, \n    \"sueldoFijo\": 450.0, \n    \"comisionPorVenta\": 0.0, \n    \"tipo\": \"M\"    \n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vendedores/agregar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores",
+            "agregar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Calcular Sueldo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vendedores/calcular",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores",
+            "calcular"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

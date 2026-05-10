@@ -15,6 +15,7 @@ import com.krakedev.examen_jefferson_chiluisa.entidades.VendedorMixto;
 @RestController
 @RequestMapping("/vendedores")
 public class VendedorController {
+	
 	 private AdminVentas admin = new AdminVentas();
 
     @PostMapping("/agregar")
@@ -37,7 +38,7 @@ public class VendedorController {
     }
 
     @GetMapping("/calcular/{cedula}")
-    public Double calcularSueldoVendedor(@PathVariable String cedula) {
+    public double calcularSueldoVendedor(@PathVariable String cedula) {
         return admin.calcularSueldo(cedula);
     }
 }
