@@ -10,9 +10,9 @@ public class TestAdmin {
 
 	    	AdminVentas admin = new AdminVentas();
 
-	        Vendedor v1 = new Vendedor("1711111111");
-	        VendedorComision v2 = new VendedorComision("1722222222");
-	        VendedorMixto v3 = new VendedorMixto("1733333333");
+	        Vendedor v1 = new Vendedor("1711111111", "V");
+	        VendedorComision v2 = new VendedorComision("1722222222", "C");
+	        VendedorMixto v3 = new VendedorMixto("1733333333", "M");
 
 	        v1.setSueldoFijo(450.0);
 	        
