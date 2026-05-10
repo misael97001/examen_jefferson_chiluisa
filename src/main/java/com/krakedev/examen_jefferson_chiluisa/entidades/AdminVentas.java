@@ -3,6 +3,7 @@ package com.krakedev.examen_jefferson_chiluisa.entidades;
 import java.util.ArrayList;
 
 public class AdminVentas {
+	
 	private ArrayList<Vendedor> vendedores = new ArrayList<>();
 
     public void agregar(Vendedor v) {
