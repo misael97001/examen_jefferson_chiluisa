@@ -1,4 +1,4 @@
-package com.krakedev.examen_jefferson_chiluisa.modelos;
+package com.krakedev.examen_jefferson_chiluisa.entidades;
 
 public class Vendedor {
 
@@ -8,7 +8,7 @@ public class Vendedor {
     private double comisionPorVenta;
     
 
-    public Vendedor(String cedula, String tipo) {
+    public Vendedor(String cedula) {
         this.cedula = cedula;
     }
 
@@ -16,13 +16,15 @@ public class Vendedor {
         return sueldoFijo;
     }
 
-    @Override
-    public String toString() {
-        return "Vendedor [Cédula: " + cedula + ", Ventas: " + numeroVentas + "]";
-    }
-
     
-    public String getCedula() {
+    @Override
+	public String toString() {
+		return "Vendedor [cedula=" + cedula + ", numeroVentas=" + numeroVentas + ", sueldoFijo=" + sueldoFijo
+				+ ", comisionPorVenta=" + comisionPorVenta + "]";
+	}
+    
+
+	public String getCedula() {
         return cedula;
     }
 
