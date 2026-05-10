@@ -19,7 +19,15 @@ public class Vendedor {
     }
 
     
-    @Override
+    public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	@Override
 	public String toString() {
 		return "Vendedor [cedula=" + cedula + ", numeroVentas=" + numeroVentas + ", sueldoFijo=" + sueldoFijo
 				+ ", comisionPorVenta=" + comisionPorVenta + "]";
